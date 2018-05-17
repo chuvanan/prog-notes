@@ -1,4 +1,1 @@
 #+TITLE: Tidy Evaluation
-
-
-sa
