@@ -30,13 +30,13 @@
 [2016-09-05 Mon]
 - http://www.mycpu.org/emacs-24-magit-magic/
 
-`M-x magit-blame` won the praise of a kernel developer.
+~M-x magit-blame~ won the praise of a kernel developer.
 
 [2015-12-25 Fri]
 - https://utcc.utoronto.ca/~cks/space/blog/programming/MagitPraise
 
 Selective staging: to stage only some changes (called 'hunks') that we've made
-to a file. Equivalent to git command line is `git add -p`.
+to a file. Equivalent to git command line is ~git add -p~.
 
 [2016-12-23 Fri]
 - https://utcc.utoronto.ca/~cks/space/blog/programming/GitSelectiveCommitWithMagit
@@ -49,7 +49,7 @@ This article if for version 1.x of Magit and not 2.x
 
 - https://www.masteringemacs.org/article/what-new-in-magit-2x
 
-  - `magit-status` gained speed performance in version 2.x.
+  - ~magit-status~ gained speed performance in version 2.x.
   - Customizing faces is enabled.
   - Git blame
   - ...
@@ -62,7 +62,7 @@ This article if for version 1.x of Magit and not 2.x
 A typical workflow:
 
 #+BEGIN_QUOTE
-I can add (“stage”) files, look at diffs, and commit and revert changes, etc. I
+I can add ("stage") files, look at diffs, and commit and revert changes, etc. I
 can also branch, fetch, pull, push, merge, stash, and even start an interactive
 rebase using simple keyboard shortcuts.
 ...
