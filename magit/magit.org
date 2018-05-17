@@ -4,6 +4,9 @@
 
 * Getting started
 
+- Run ~git status <filename>~ by opening ~<fillename>~ and typing ~M-x
+  magit-status~ or calling key binding ~C-x g~.
+
 * Emacs's magit setup
 
 #+BEGIN_SRC emacs-lisp
