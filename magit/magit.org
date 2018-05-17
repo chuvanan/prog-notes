@@ -4,6 +4,17 @@
 
 * Getting started
 
+* Emacs's magit setup
+
+#+BEGIN_SRC emacs-lisp
+(use-package magit
+  :ensure t
+  :config
+  ;; https://github.com/purcell/emacs.d/blob/32770f266ec5fc78a0b1bf2a63266a34c2b3f723/lisp/init-git.el#L12
+  (global-set-key (kbd "<f12>") 'magit-status)
+  (global-set-key (kbd "C-x g") 'magit-status)
+  (global-set-key (kbd "C-x M-g") 'magit-dispatch-popup))
+#+END_SRC
 
 * References
 
@@ -61,9 +72,10 @@ A more subtle feature of Magit is its support for partial commits (such as you
 might do with git add -p).
 #+END_QUOTE
 
-
 [2013-06-08 Sat]
 - http://ergoemacs.org/emacs/emacs_magit-mode_tutorial.html
+
+Onboarding tutorial for absolute beginner.
 
 [2015-01-16 Fri]
 - https://shingofukuyama.github.io/emacs-magit-reword-commit-messages/
