@@ -1,6 +1,10 @@
 #+TITLE: Magit
 
 
+
+* Getting started
+
+
 * References
 
 ** Official manual
@@ -9,25 +13,60 @@
 
 ** Blog posts
 
+[2016-09-05 Mon]
 - http://www.mycpu.org/emacs-24-magit-magic/
+
+[2015-12-25 Fri]
 - https://utcc.utoronto.ca/~cks/space/blog/programming/MagitPraise
+
+[2016-12-23 Fri]
 - https://utcc.utoronto.ca/~cks/space/blog/programming/GitSelectiveCommitWithMagit
+
 - https://www.masteringemacs.org/article/introduction-magit-emacs-mode-git
 - https://www.masteringemacs.org/article/what-new-in-magit-2x
+
 - https://blog.danielgempesaw.com/post/122193964104/why-i-dont-hate-git-hidden-consistency-armin?utm_source=tuicool
+
+[2014-10-21 Tue]
 - http://randycoulman.com/blog/2014/10/21/magit/
+
+[2013-06-08 Sat]
 - http://ergoemacs.org/emacs/emacs_magit-mode_tutorial.html
+
+[2015-01-16 Fri]
 - https://shingofukuyama.github.io/emacs-magit-reword-commit-messages/
+
 - http://alexott.net/en/writings/emacs-vcs/EmacsGit.html
+
+[2017-09-28 Thu]
 - https://www.youtube.com/watch?v=rzQEIRRJ2T0
+
+[2017-08-05 Sat]
 - https://www.lvguowei.me/post/magit-rebase/
+
+[2017-08-06 Sun]
 - https://www.lvguowei.me/post/magit-rebase-2/
+
+[2017-08-12 Sat]
 - https://www.lvguowei.me/post/magit-tutorial-bisect/
+
+[2009-01-18 Sun]
 - https://vimeo.com/2871241
+
+[2012-12-27 Thu]
 - http://jr0cket.co.uk/2012/12/driving-git-with-emacs-pure-magic-with.html
+
+[2012-12-30 Sun]
 - http://jr0cket.co.uk/2012/12/driving-git-with-emacs-part-two-may-log.html.html
+
+[2017-07-12 Wed]
 - https://lwn.net/Articles/727550/
+
+[2011-09-08 Thu]
 - https://vickychijwani.me/magit-part-i/
+
+[2011-11-25 Fri]
 - https://vickychijwani.me/magit-part-ii/
+
 - https://github.com/magit/magit/wiki/Cheatsheet
 - https://magit.vc/manual/magit-refcard.pdf
