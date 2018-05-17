@@ -45,6 +45,23 @@ This article if for version 1.x of Magit and not 2.x
 [2014-10-21 Tue]
 - http://randycoulman.com/blog/2014/10/21/magit/
 
+A typical workflow:
+
+#+BEGIN_QUOTE
+I can add (“stage”) files, look at diffs, and commit and revert changes, etc. I
+can also branch, fetch, pull, push, merge, stash, and even start an interactive
+rebase using simple keyboard shortcuts.
+...
+
+I can ignore files, optionally specifying a more general pattern for the
+ignore. This feature adds the new entry to my .gitignore for me.
+...
+
+A more subtle feature of Magit is its support for partial commits (such as you
+might do with git add -p).
+#+END_QUOTE
+
+
 [2013-06-08 Sat]
 - http://ergoemacs.org/emacs/emacs_magit-mode_tutorial.html
 
