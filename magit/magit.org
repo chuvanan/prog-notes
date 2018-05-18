@@ -13,7 +13,6 @@
 (use-package magit
   :ensure t
   :config
-  ;; https://github.com/purcell/emacs.d/blob/32770f266ec5fc78a0b1bf2a63266a34c2b3f723/lisp/init-git.el#L12
   (global-set-key (kbd "<f12>") 'magit-status)
   (global-set-key (kbd "C-x g") 'magit-status)
   (global-set-key (kbd "C-x M-g") 'magit-dispatch-popup))
