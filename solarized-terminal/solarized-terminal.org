@@ -1,0 +1,43 @@
+#+TITLE: Solarized terminal
+
+#+BEGIN_QUOTE
+Beautiful matters!
+#+END_QUOTE
+
+This is a short guide for those working (or living) in (Gnome) terminal.
+
+*** Solarized theme
+
+[[https://github.com/altercation/solarized][Solarized]] is a well designed color palette which is used extensively in terminal
+and gui applications. For theory behind the colors, and screenshots, see the
+[[http://ethanschoonover.com/solarized][Solarized homepage]].
+
+Here's a quick installation guide:
+
+- Install ~dconf~:
+
+#+BEGIN_SRC bash
+sudo apt install dconf-cli
+#+END_SRC
+
+- Install setting scripts. You'll be asked for selecting ~dark~ or ~light~
+  theme, and installing ~dircolors~:
+
+#+BEGIN_SRC bash
+git clone https://github.com/Anthony25/gnome-terminal-colors-solarized.git
+cd gnome-terminal-colors-solarized
+./install.sh
+#+END_SRC
+
+- Activate ~dircolors~:
+
+#+BEGIN_SRC bash
+if [ -f ~/.dir_colors/dircolors ]
+    then eval `dircolors ~/.dir_colors/dircolors`
+fi
+#+END_SRC
+
+*** Fonts
+
+
+*** Tmux
