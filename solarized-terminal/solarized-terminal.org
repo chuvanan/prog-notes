@@ -41,3 +41,5 @@ fi
 
 
 *** Tmux
+
+[[file:solarized-terminal.png]]
