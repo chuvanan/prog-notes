@@ -29,7 +29,7 @@ cd gnome-terminal-colors-solarized
 ./install.sh
 #+END_SRC
 
-- Activate ~dircolors~:
+- Activate ~dircolors~ by putting the following in your ~.bashrc~:
 
 #+BEGIN_SRC bash
 if [ -f ~/.dir_colors/dircolors ]
@@ -39,7 +39,11 @@ fi
 
 *** Fonts
 
+Source Code Pro, Hasklig, FiraCode, Hack are all great fonts for monospace
+texts. Pick the one you like. I choose Source Code Pro Medium
 
 *** Tmux
+
+To cut it short, Tmux is a productivity tool for terminal users.
 
 [[file:solarized-terminal.png]]
