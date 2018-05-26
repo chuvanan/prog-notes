@@ -1,0 +1,32 @@
+#+TITLE: git
+
+
+- How can I undo changes to unstaged files?
+
+#+BEGIN_SRC bash
+git checkout -- <filename>
+#+END_SRC
+
+- How can I unstage a file that I have staged?
+
+#+BEGIN_SRC bash
+git reset HEAD <filename>
+#+END_SRC
+
+- How do I restore an old version of a file?
+
+#+BEGIN_SRC bash
+git checkout <first-six-hash-characters> <filename>
+#+END_SRC
+
+- How do I undo all of the changes I have made?
+
+#+BEGIN_SRC bash
+git reset HEAD <directory1> [<directory2> ...]
+git reset HEAD <filename1> [<filename2> ...]
+#+END_SRC
+
+#+BEGIN_SRC bash
+git checkout -- <directory1> [<directory2> ...]
+git checkout -- <filename1> [<filename2> ...]
+#+END_SRC
