@@ -1,6 +1,8 @@
 #+TITLE: git
 
 
+*** Undo
+
 - How can I undo changes to unstaged files?
 
 #+BEGIN_SRC bash
@@ -29,4 +31,56 @@ git reset HEAD <filename1> [<filename2> ...]
 #+BEGIN_SRC bash
 git checkout -- <directory1> [<directory2> ...]
 git checkout -- <filename1> [<filename2> ...]
+#+END_SRC
+
+
+*** Branch
+
+
+- How can I see what branches my repository has?
+
+#+BEGIN_SRC bash
+git branch
+#+END_SRC
+
+- How can I view the differences between branches?
+
+#+BEGIN_SRC bash
+git diff <branch-1>..<branch-2>
+#+END_SRC
+
+Note: there's two dots between branch names
+
+- How can I switch from one branch to another?
+
+#+BEGIN_SRC bash
+git checkout <branch-name>
+#+END_SRC
+
+- How can I create a branch?
+
+#+BEGIN_SRC bash
+git checkout -b <branch-name>
+#+END_SRC
+
+- How can I merge two branches?
+
+#+BEGIN_SRC bash
+git merge <source> <destination>
+#+END_SRC
+
+- How can I merge two branches with conflicts?
+
+*** Collaborating
+
+- How can I create a brand new repository?
+
+#+BEGIN_SRC bash
+git init <project-name>
+#+END_SRC
+
+- How can I turn an existing project into a Git repository?
+
+#+BEGIN_SRC bash
+git init <path/to/project>
 #+END_SRC
