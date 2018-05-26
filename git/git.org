@@ -84,3 +84,52 @@ git init <project-name>
 #+BEGIN_SRC bash
 git init <path/to/project>
 #+END_SRC
+
+- How can I create a copy of an existing repository?
+
+#+BEGIN_SRC bash
+git clone <URL>
+# or from local project
+git clonet <file:///existing/project> <new-project-name>
+#+END_SRC
+
+- How can I find out where a cloned repository originated?
+
+#+BEGIN_SRC bash
+git remote
+git remove -v
+#+END_SRC
+
+- How can I define remotes?
+
+#+BEGIN_SRC bash
+git remote add <remote-name> <URL>
+#+END_SRC
+
+Remove remote:
+
+#+BEGIN_SRC bash
+git remote rm <remote-name>
+#+END_SRC
+
+- How can I pull in changes from a remote repository?
+
+#+BEGIN_SRC bash
+git pull <remote-name> <branch-name>
+#+END_SRC
+
+- What happens if I try to pull when I have unsaved changes?
+
+Either commit your local changes or revert them, then try to pull again.
+
+- How can I push my changes to a remote repository?
+
+#+BEGIN_SRC bash
+git push <remote-name> <branch-name>
+#+END_SRC
+
+- What happens if my push conflicts with someone else's work?
+
+To prevent this happening, Git does not allow you to push changes to a remote
+repository unless you have merged the contents of the remote repository into
+your own work.
