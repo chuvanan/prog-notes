@@ -133,3 +133,10 @@ git push <remote-name> <branch-name>
 To prevent this happening, Git does not allow you to push changes to a remote
 repository unless you have merged the contents of the remote repository into
 your own work.
+
+*** References
+
+- https://www.atlassian.com/git/tutorials
+- https://www.tutorialspoint.com/git/index.htm
+- https://jwiegley.github.io/git-from-the-bottom-up/ by legendary John Wiegley
+- https://chris.beams.io/posts/git-commit/ on how to write a good commit
