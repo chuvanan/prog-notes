@@ -71,6 +71,18 @@ git merge <source> <destination>
 
 - How can I merge two branches with conflicts?
 
+- How can I delete a branch?
+
+#+BEGIN_SRC bash
+git branch -d <branch-name>
+#+END_SRC
+
+- How do I create a tag?
+
+#+BEGIN_SRC bash
+git tag <semantic-version> <first-10-character-commit-id>
+#+END_SRC
+
 *** Collaborating
 
 - How can I create a brand new repository?
@@ -142,3 +154,4 @@ your own work.
 - https://chris.beams.io/posts/git-commit/ on how to write a good commit
 - https://guides.github.com/introduction/flow/ on Github flow
 - https://guides.github.com/activities/hello-world/ a simple example of Github flow
+- http://rogerdudler.github.io/git-guide/ no shit guide for getting started with git
