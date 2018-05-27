@@ -140,3 +140,5 @@ your own work.
 - https://www.tutorialspoint.com/git/index.htm
 - https://jwiegley.github.io/git-from-the-bottom-up/ by legendary John Wiegley
 - https://chris.beams.io/posts/git-commit/ on how to write a good commit
+- https://guides.github.com/introduction/flow/ on Github flow
+- https://guides.github.com/activities/hello-world/ a simple example of Github flow
