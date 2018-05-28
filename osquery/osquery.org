@@ -33,10 +33,15 @@ sudo gdebi osquery_3.2.4_1.linux.amd64.deb
 
 More than [[https://osquery.io/schema/3.2.4][200]] (as of 28/05/2018)
 
+**** domain problems:
+
+- incident response
+- file integrity
+
 
 *** References
 
-- https://code.facebook.com/posts/844436395567983/introducing-osquery/ FB opens sourced osquery
+- https://code.facebook.com/posts/844436395567983/introducing-osquery/ FB open-sourced osquery
 - https://github.com/facebook/osquery osquery's source code
 - https://osquery.readthedocs.io/en/stable/ osquery's official documentation
 - https://resources.infosecinstitute.com/osquery-tour/
