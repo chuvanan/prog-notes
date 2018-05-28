@@ -1,0 +1,52 @@
+#+TITLE: osquery
+
+Learn osqueyr in 30 minutes.
+
+*** About
+
+[[https://code.facebook.com/posts/844436395567983/introducing-osquery/][Osquery]] exposes an operating system as a high-performance relational
+database. This design allows you to write SQL-based queries efficiently and
+easily to explore operating systems.
+
+*** Installation
+
+- For Ubuntu/Debian users:
+
+#+BEGIN_SRC bash
+wget https://pkg.osquery.io/deb/osquery_3.2.4_1.linux.amd64.deb
+sudo gdebi osquery_3.2.4_1.linux.amd64.deb
+#+END_SRC
+
+*** Onboaring
+
+**** osquery components:
+
+- ~osqueryi~: it is an interactive shell that used for ad-hoc queries
+
+- ~osqueryd~: high-performance host monitoring daemon, which runs in the
+  background to support scheduled queries and record the system changes over
+  time.
+
+- ~osqueryctl~: it helps in deployment and testing of configurations.
+
+**** osquery tables:
+
+More than [[https://osquery.io/schema/3.2.4][200]] (as of 28/05/2018)
+
+
+*** References
+
+- https://code.facebook.com/posts/844436395567983/introducing-osquery/ FB opens sourced osquery
+- https://github.com/facebook/osquery osquery's source code
+- https://osquery.readthedocs.io/en/stable/ osquery's official documentation
+- https://resources.infosecinstitute.com/osquery-tour/
+- https://blog.trailofbits.com/2017/11/09/how-are-teams-currently-using-osquery/
+- https://blog.trailofbits.com/2018/04/10/what-do-you-wish-osquery-could-do/
+- https://blog.trailofbits.com/2017/12/21/osquery-pain-points/
+- https://speakerdeck.com/marpaia this guy is creator of osquery
+- https://speakerdeck.com/marpaia/osquery-approaching-security-the-hacker-way
+- https://www.digitalocean.com/community/tutorials/how-to-monitor-your-system-security-with-osquery-on-ubuntu-16-04
+  as usual, useful tutorial from digitalocean
+- https://code.facebook.com/posts/938595492830104/osquery-introducing-query-packs/ query packs
+- https://rud.is/b/2018/05/26/the-power-of-standards-and-consistency/ osquery's R client
+- https://code.facebook.com/posts/1411870269134471/how-rocksdb-is-used-in-osquery/ osquery and RocksDB
