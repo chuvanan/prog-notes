@@ -4,12 +4,16 @@ OCR: Optical Character Recognition
 
 ** Strategy
 
-
+- Use ~pdftools~ to convert pdf files into images (preferable in png format)
+- Use ~magick~ to perform image processing
+- Use ~tesseract~ to extract text from images
+- Write R script to tidy extracted text data
+- Write R script to evaluate performance
 
 ** Optimizing performance
 
 - Context language (training data)
-- Quality of input image. The higher, the better.
+- Quality of input image.
 
 
 ** References
