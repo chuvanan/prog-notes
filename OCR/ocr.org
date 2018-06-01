@@ -12,8 +12,10 @@ OCR: Optical Character Recognition
 
 ** Optimizing performance
 
-- Context language (training data)
-- Quality of input image.
+- Improve context language (training data)
+- Quality of input image matters.
+  - Higher image resolution leads to better result.
+  - Capture text section only that makes tidying data easier
 
 
 ** References
@@ -27,3 +29,5 @@ OCR: Optical Character Recognition
 - https://derekjanni.github.io/OCR-in-Python/
 - https://pythontips.com/2016/02/25/ocr-on-pdf-files-using-python/
 - https://derekjanni.github.io/pyocr/
+- http://data.library.virginia.edu/reading-pdf-files-into-r-for-text-mining/
+  another approach using ~tm~ package
