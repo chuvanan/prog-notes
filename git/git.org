@@ -155,3 +155,5 @@ your own work.
 - https://guides.github.com/introduction/flow/ on Github flow
 - https://guides.github.com/activities/hello-world/ a simple example of Github flow
 - http://rogerdudler.github.io/git-guide/ no shit guide for getting started with git
+- https://speakerdeck.com/alicebartlett/git-for-humans my favorite git tutorial
+- http://happygitwithr.com/ Another great work by Jenny Bryan
