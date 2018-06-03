@@ -34,12 +34,14 @@ OCR: Optical Character Recognition
 
 ** Dependencies
 
-- ~libpoppler-cpp-dev~ is the engine behind ~pdftools~ while ~libtesseract-dev~
-  makes ~tesseract~ package possible.
+- ~libpoppler-cpp-dev~ is the engine behind ~pdftools~, ~libmagick++-dev~ is the
+  most comprehensive open-source image processing library while
+  ~libtesseract-dev~ makes ~tesseract~ package possible
 
 #+BEGIN_SRC bash
   sudo apt install libpoppler-cpp-dev
   sudo apt install libtesseract-dev libleptonica-dev
+  sudo apt-get install libmagick++-dev
 #+END_SRC
 
 - Language training data is also required
