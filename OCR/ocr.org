@@ -31,3 +31,19 @@ OCR: Optical Character Recognition
 - https://derekjanni.github.io/pyocr/
 - http://data.library.virginia.edu/reading-pdf-files-into-r-for-text-mining/
   another approach using ~tm~ package
+
+** Dependencies
+
+- ~libpoppler-cpp-dev~ is the engine behind ~pdftools~ while ~libtesseract-dev~
+  makes ~tesseract~ package possible.
+
+#+BEGIN_SRC bash
+  sudo apt install libpoppler-cpp-dev
+  sudo apt install libtesseract-dev libleptonica-dev
+#+END_SRC
+
+- Language training data is also required
+
+#+BEGIN_SRC bash
+  sudo apt install tesseract-ocr-eng tesseract-ocr-vie
+#+END_SRC
