@@ -1,37 +1,53 @@
 
-
-
-library(tesseract)
-eng <- tesseract("eng")
-
-text <- tesseract::ocr("http://jeroen.github.io/images/testocr.png",
-                       engine = eng)
-cat(text)                               # noted: line break is preserved
-
-word <- tesseract::ocr_data("http://jeroen.github.io/images/testocr.png",
-                            engine = eng)
-word                                    # accuracy rate for each word
-
-## install new training data
-tesseract_download("vie")
-
-## -----------------------------------------------------------------------------
-## pdftools
-
 library(pdftools)
-pngfile <- pdftools::pdf_convert("~/Dropbox/prog-notes/OCR/G-00002.pdf")
+library(tesseract)
+library(magick)
 
-bitmap_p1 <- pdftools::pdf_render_page("~/Dropbox/prog-notes/OCR/G-00002.pdf",
-                                       page = 1, dpi = 300)
-bitmap_p2 <- pdftools::pdf_render_page("~/Dropbox/prog-notes/OCR/G-00002.pdf",
-                                       page = 2, dpi = 300)
-png::writePNG(bitmap_p1, "~/Dropbox/prog-notes/OCR/bitmap_p1.png")
-png::writePNG(bitmap_p2, "~/Dropbox/prog-notes/OCR/bitmap_p2.png")
+## -----------------------------------------------------------------------------
+## Helper functions
+
+get_pdfs <- function(path) {
+    list.files(path, pattern = "\\.pdf$", full.names = TRUE)
+}
+
+pdf2png <- function(pdfs, format = "png", dpi = 400L, pages = 1:2) {
+    lapply(pdfs, function(x) {
+        pdftools::pdf_convert(pdf = x, dpi = dpi, pages = pages)
+    })
+}
 
 
 ## -----------------------------------------------------------------------------
-## test Vietnamese
+## Convert pdf to png
+
+
+pdf_files <- get_pdfs(path = "~/Dropbox/prog-notes/OCR/")
+
+## Output:
+## [1] "/home/anchu/Dropbox/prog-notes/OCR/G-000100.pdf"
+
+pdf2png(pdf_files)
+## Output:
+## Converting page 1 to G-000100_1.png... done!
+## Converting page 2 to G-000100_2.png... done!
+
+## -----------------------------------------------------------------------------
+## Image pre-processing
+
+png1 <- image_read("~/Dropbox/prog-notes/OCR/G-000100_1.png")
+png2 <- image_read("~/Dropbox/prog-notes/OCR/G-000100_2.png")
+
+png1 <- image_crop(png1, "3000x2500+60+2100")
+png2 <- image_crop(png2, "3000x3000+60+70")
+png2 <- image_rotate(png2, 1)
+image_display(png2, F)
+
+
+## -----------------------------------------------------------------------------
+## Extract text
 
 vie <- tesseract::tesseract("vie")
-page1 <- tesseract::ocr("~/Dropbox/prog-notes/OCR/bitmap_p1.png", engine = vie)
-page2 <- tesseract::ocr("~/Dropbox/prog-notes/OCR/bitmap_p2.png", engine = vie)
+text1 <- ocr(png1, engine = vie)
+text2 <- ocr(png2, engine = vie)
+cat(text1)
+cat(text2)
