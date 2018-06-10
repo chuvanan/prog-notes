@@ -9,10 +9,29 @@ whiteboard.
 
 * How-to
 
-The underlying concept of Trello is the [[https://en.wikipedia.org/wiki/Kanban][Kanban]] system
+The underlying concept of Trello is the [[https://en.wikipedia.org/wiki/Kanban][Kanban]] (visual card) system.
+
+Three components:
+
+- Board: a digital whiteboard. Board can be used per project.
+
+- Lists: columns to organize the whiteboard in different categories/phases. For
+  example: To-do, In progress and Completed lists.
+
+- Cards: to-do items embedded in lists, representing tasks of the project.
+
+Features:
+
+- Links to third party services: G-docs, Github, ...
+- Media files supported: pictures, files
+- Checklists, Markdown-based formatting
+- Color-coded labels
+- Archive. Private mode.
+- Team work
 
 * References
 
+- https://trello.com/b/I7TjiplA/trello-tutorial
 - https://computers.tutsplus.com/tutorials/everything-you-need-to-know-to-work-productively-in-trello--cms-21450
 - https://lifehacker.com/how-to-use-trello-to-organize-your-entire-life-1683821040
 - http://techbloke.com/trello-tutorial/
