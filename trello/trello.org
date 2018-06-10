@@ -1,0 +1,18 @@
+#+TITLE: Trello
+
+* About
+
+https://trello.com/: a web-based project management application.
+
+A close, low-tech alternative to Trello is a combination of Post-it notes and a
+whiteboard.
+
+* How-to
+
+The underlying concept of Trello is the [[https://en.wikipedia.org/wiki/Kanban][Kanban]] system
+
+* References
+
+- https://computers.tutsplus.com/tutorials/everything-you-need-to-know-to-work-productively-in-trello--cms-21450
+- https://lifehacker.com/how-to-use-trello-to-organize-your-entire-life-1683821040
+- http://techbloke.com/trello-tutorial/
