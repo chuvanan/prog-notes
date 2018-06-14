@@ -1,0 +1,64 @@
+#+TITLE: purrr
+
+
+** About
+
+A functional programming (FP) toolkit for R https://github.com/tidyverse/purrr
+
+** Features
+
+There're three set of functions that facilitate a functional approach to
+programming: ~map()~, ~filter()~, ~reduce()~.
+
+Two notable benefits of purrr's approach to FP: consistency and type-safety.
+
+*** Map family
+
+General syntax:
+
+- ~map(.x, .f)~: apply function ~.f~ to each element of ~.x~
+
+- ~modify(.x, .f)~: is a shortcut for ~x[] <- map(.x, .f)~
+
+- ~imap(.x, .f)~: is shorthand for ~map2(x, names(x), ...)~ or ~map2(x,
+  seq_along(x), ...)~
+
+- ~invoke(.f, .x)~: is a wrapper around ~do.call()~. It calls lists of functions
+  with lists of parameters
+
+
+|                      | One arguement                                       | Two arguments | Multiple arguments |
+|----------------------+-----------------------------------------------------+---------------+--------------------|
+| For side-effect      | walk() / iwalk()                                    | walk2()       | pwalk()            |
+|----------------------+-----------------------------------------------------+---------------+--------------------|
+| List                 | map() / modify() / imap() / invoke() / invoke_map() |               |                    |
+|                      | map_if() / modify_if()                              |               |                    |
+|                      | map_at() / modify_at()                              |               |                    |
+|----------------------+-----------------------------------------------------+---------------+--------------------|
+| Character            | map_chr() / imap_chr() / invoke_map_chr()           | map2_chr()    | pmap_chr()         |
+|----------------------+-----------------------------------------------------+---------------+--------------------|
+| Integer              | map_int() / imap_int() / invoke_map_int()           | map2_int()    | pmap_int()         |
+|----------------------+-----------------------------------------------------+---------------+--------------------|
+| Double               | map_dbl() / imap_dbl() / invoke_map_dbl()           | map2_dbl()    | pmap_dbl()         |
+|----------------------+-----------------------------------------------------+---------------+--------------------|
+| Raw                  | map_raw() / imap_raw() / invoke_map_raw()           | map2_raw()    | pmap_raw()         |
+|----------------------+-----------------------------------------------------+---------------+--------------------|
+| Dataframe (row-wise) | map_dtf() / imap_dtf() / invoke_map_dtf()           | map2_dtf()    | pmap_dtf()         |
+| Dataframe (col-wise) | map_dfc() / imap_dfc() / invoke_map_dfc()           | map2_dfc()    | pmap_dfc()         |
+
+
+** References
+
+- http://r4ds.had.co.nz/iteration.html
+- https://jennybc.github.io/purrr-tutorial/index.html
+- https://stackoverflow.com/questions/45101045/why-use-purrrmap-instead-of-lapply/47123420#47123420
+- A crazy little thing called purrr [[[https://colinfay.me/purrr-web-mining/][1]]], [[[https://colinfay.me/purrr-text-wrangling/][2]]], [[[https://colinfay.me/purrr-set-na/][3]]], [[[https://colinfay.me/purrr-mappers/][4]]], [[[https://colinfay.me/purrr-code-optim/][5]]], [[[https://colinfay.me/purrr-statistics/][6]]]
+- https://www.rstudio.com/resources/videos/happy-r-users-purrr-tutorial/
+- https://channel9.msdn.com/Events/useR-international-R-User-conferences/useR-International-R-User-2017-Conference/Solving-iteration-problems-with-purrr
+- https://data.library.virginia.edu/getting-started-with-the-purrr-package-in-r/
+- https://towardsdatascience.com/functional-programming-in-r-with-purrr-469e597d0229
+- http://shawnmehan.com/purrr-package-for-r-is-good-for-performance/
+- https://ijlyttle.github.io/isugg_purrr/presentation.html#(1)
+- https://github.com/rstudio/cheatsheets/raw/master/purrr.pdf cheasheet
+- https://thomasmock.netlify.com/post/functional-programming-in-r-with-purrr/
+- http://www.brodrigues.co/blog/2017-03-24-lesser_known_purrr/
