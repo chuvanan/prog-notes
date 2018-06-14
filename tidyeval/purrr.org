@@ -62,3 +62,12 @@ General syntax:
 - https://github.com/rstudio/cheatsheets/raw/master/purrr.pdf cheasheet
 - https://thomasmock.netlify.com/post/functional-programming-in-r-with-purrr/
 - http://www.brodrigues.co/blog/2017-03-24-lesser_known_purrr/
+
+On functional programming:
+
+- https://www.slideshare.net/DASpringate/functional-programming-in-r
+- http://adv-r.had.co.nz/Functional-programming.html
+- http://www.bioinformaticszen.com/post/simple-functional-programming-in-r/
+- https://www.r-bloggers.com/functional-programming-in-r/
+- https://maryrosecook.com/blog/post/a-practical-introduction-to-functional-programming
+- http://www.quantide.com/ramarro-chapter-05/
