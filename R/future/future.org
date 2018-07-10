@@ -1,0 +1,37 @@
+#+TITLE: FUTURE
+
+
+** About
+
+- A ~future~ is an abstraction for a value that may be available at some point
+  in the future.
+
+- The state of a future can either be unresolved or resolved.
+
+- If the value is queried while the future is still unresolved, the current
+  process is blocked until the future is resolved.
+
+- It is possible to check whether a future is resolved or not without blocking.
+
+#+BEGIN_SRC r
+  library(future)
+  ## implicit future
+  v %<-% {
+      cat("Resolving ...\n")
+      3.14
+  }
+
+  ## explicit future
+  f <- future({
+      cat("Resolving ...\n")
+      3.14
+  })
+  v <- value(f)
+#+END_SRC
+
+** How it works?
+
+** Further reading
+
+- https://github.com/HenrikBengtsson/future
+- https://github.com/HenrikBengtsson/future.apply
