@@ -1,4 +1,4 @@
-#+TITLE: FUTURE
+#+TITLE: R's future package
 
 
 ** About
