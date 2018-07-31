@@ -1,1 +1,52 @@
 #+TITLE: Tidy Evaluation
+
+
+* Theory
+
+** Is tidy evaluatino worthy?
+
+The benefits of tidyeval:
+
+- It saves (a lot) of typing which is convenient for interactive work
+
+- It helps build DSL
+
+The downside of tidyeval (and NSE in general):
+
+- Code is ambiguous (not referentially transparent) which makes functions more
+  unpredictable
+
+** Jargon
+
+- quasiquotation
+
+- quosures
+
+
+* Applications
+
+
+* Cookbook (solutions to common problems)
+
+
+
+* References
+
+- https://milesmcbain.xyz/solving-the-challenge-of-tidyeval/
+- [[http://www.alexpghayes.com/blog/gentle-tidy-eval-with-examples/][Gentle tidy eval with examples]]
+- [[https://colinfay.me/tidyeval-1/][Down the rabbit hole with tidy eval — Part 1]]
+- [[https://edwinth.github.io/blog/nse/][Non-standard evaluation, how tidy eval builds on base R]]
+- [[http://www.onceupondata.com/2017/08/12/my-first-steps-into-the-world-of-tidyeval/][My First Steps into The World of Tidy Eval]]
+- [[https://github.com/rladies/meetup-presentations_boston/blob/master/Boston_20170817_tidyeval_ppt.pdf][Meetup - programming with dplyr]]
+- [[http://blog.jalsalam.com/posts/2017/quasi-quotation-as-meta-recipe/][Quasi-Quotation By Analogy]]
+- [[http://blog.jalsalam.com/posts/2017/quasi-quotation-applications/][Do it With Quasi-Quotation]]
+- [[https://www.johnmackintosh.com/2018-02-19-theory-free-tidyeval/][Theory free tidyeval]]
+- [[https://thisisnic.github.io/2018/04/16/how-do-i-make-my-own-dplyr-style-functions/][How do I make my own dplyr-style functions?]]
+- [[https://thisisnic.github.io/2018/03/29/what-is-tidy-eval-and-why-should-i-care/][What is tidy eval and why should I care?]]
+- [[https://thisisnic.github.io/2018/03/31/what-the-heck-is-quasiquotation/][What the heck is quasiquotation?]]
+- [[http://www.json.blog/2017/05/making-sense-of-dplyr-0.6/?utm_content=bufferb2c45&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer][Making Sense of dplyr 0.6]]
+- [[https://purrple.cat/blog/2017/06/28/filter-with-context/][filter with context]]
+- https://schd.ws/hosted_files/user2017/43/tidyeval-user.pdf
+- https://github.com/cwickham/quotation/blob/master/three-examples-slides.pdf
+- [[https://edwinth.github.io/blog/dplyr-recipes/][Tidy evaluation, most common actions]]
+- https://dplyr.tidyverse.org/articles/programming.html
