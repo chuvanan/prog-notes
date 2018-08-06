@@ -50,3 +50,9 @@ The downside of tidyeval (and NSE in general):
 - https://github.com/cwickham/quotation/blob/master/three-examples-slides.pdf
 - [[https://edwinth.github.io/blog/dplyr-recipes/][Tidy evaluation, most common actions]]
 - https://dplyr.tidyverse.org/articles/programming.html
+- http://rpubs.com/lionel-/programming-draft
+- https://milesmcbain.xyz/solving-the-challenge-of-tidyeval/
+- https://notstatschat.rbind.io/2018/07/30/quoting-and-macros-in-r/
+- https://colinfay.me/lazyeval/
+- http://languagelog.ldc.upenn.edu/myl/llog/jmc.pdf
+- https://milesmcbain.xyz/the-roots-of-quotation/
