@@ -1,0 +1,63 @@
+
+
+* Commonly Used ESS commands
+
+
+** For general programming
+
+- /C-Enter/: ess-eval-region-or-function-or-paragraph-and-step <run contiguous
+  block of codes or selection>
+
+- /C-c C-n/: ess-eval-line-visibly-and-step <run current line visibly and jump
+  to next line of code>
+
+- /C-C C-j/: ess-eval-line <run current line invisibly>
+
+- /C-c C-f/: ess-eval-function <run function definition>
+
+- /C-c C-l/: ess-load-file <sourcing R script>
+
+- /C-c M-l/: ess-load-file <same as above>
+
+- /C-c C-e C-t/: ess-build-tags-for-directory <build R objects tags>
+
+- /M-./: xref-find-definitions (found in global-map) <find function definition>
+
+- /M-,/: xref-pop-marker-stack (found in global-map) <Pop back to where M-. was
+  last invoked>
+
+** For interactive use
+
+- /C-c C-e i/: ess-install-library <install a package from R console>
+
+- /C-C C-e l/: ess-load-library <load a package from R console>
+
+- /C-c C-z/: ess-switch-to-inferior-or-script-buffer <jump back and forth
+  between R script and R console>
+
+- /C-c C-e r/: inferior-ess-reload <for restart R session>
+
+- /C-S-F10/: inferior-ess-reload (copied from RStudio) <same as above>
+
+- /C-c `/: ess-show-traceback <for debugging>
+
+- /C-c C-v/: ess-display-help-on-object <show function help>
+
+- /C-c C-x/: ess-execute-objects <show global environment objects, equivalent to
+  Environment pane in RStudio>
+
+- /C-c C-s/: ess-execute-search <excute searchpath()>
+
+- /C-c C-q/: ess-quit <kill R process>
+
+- /C-c C-l/: command ess-msg-and-comint-dynamic-list-input-ring <show history>
+
+** For package developement
+
+- /C-c C-o C-o/: ess-roxy-update-entry
+
+* Less Used Commands
+
+- /C-c C-d v/: ess-display-vignettes <show vignette>
+
+- /C-c C-d a/: ess-display-help-apropos <run apropos>
