@@ -1,0 +1,24 @@
+
+
+** Workflow
+
+- Create package script to declare, amonth other things, the use of
+  **Rcpp**. Sample script as follows:
+
+#+BEGIN_SRC R
+##' @useDynLib <package_name>
+##' @importFrom Rcpp sourceCpp cppFunction
+"_PACKAGE"
+#+END_SRC
+
+- Write Rcpp source code. Decide yourself which routines are public API.
+
+#+BEGIN_SRC cpp
+
+// [[Rcpp:export]]
+double sum_(NumericVector x, NumericVector y) {
+    double sum;
+    sum = x + y;
+    return sum;
+}
+#+END_SRC
