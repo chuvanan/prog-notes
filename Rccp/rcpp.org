@@ -2,8 +2,8 @@
 
 ** Workflow
 
-- Create package script to declare, amonth other things, the use of
-  **Rcpp**. Sample script as follows:
+- Create package script to declare, amonth other things, the use of **Rcpp**.
+Sample script as follows:
 
 #+BEGIN_SRC R
 ##' @useDynLib <package_name>
@@ -18,7 +18,7 @@
 // [[Rcpp:export]]
 double sum_(NumericVector x, NumericVector y) {
     double sum;
-    sum = x + y;
+    sum = sum(x + y);
     return sum;
 }
 #+END_SRC
