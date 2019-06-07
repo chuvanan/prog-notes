@@ -1,0 +1,14 @@
+
+
+
+** References
+
+- [[https://nilsdeppe.com/posts/emacs-c++-ide2][Using Emacs as a C++ IDE]]
+
+- [[http://parbo.github.io/blog/2016/05/10/configuring-emacs-for-cpp/][Configuring Emacs for C++]]
+
+- [[https://www.sandeepnambiar.com/setting-up-emacs-for-c++/][Emacs setup for C++]]
+
+- [[http://martinsosic.com/development/emacs/2017/12/09/emacs-cpp-ide.html][Emacs as a C++ IDE]]
+
+- [[https://oremacs.com/2017/03/28/emacs-cpp-ide/][Using Emacs as a C++ IDE]]
