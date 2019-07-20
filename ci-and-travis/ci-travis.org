@@ -1,0 +1,20 @@
+
+
+** Getting started
+
+- Have an account link to your Github on: https://travis-ci.org/ and
+  https://codecov.io/
+
+- Select the repository that you want to build CI or CodeCoverage
+
+- Install packages: =remotes::install_github("ropenscilabs/travis")= and
+  =install.packages("covr")=
+
+- In your package directory, run =usethis::use_travis()= and
+  =usethis::use_coverage()=
+
+- Copy badge links to your README.md
+
+** References
+
+- [[https://devguide.ropensci.org/ci.html#coverage][Continuous integration best practices]]
