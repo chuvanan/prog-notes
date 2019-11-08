@@ -1,0 +1,16 @@
+
+
+
+* polymode
+
+** Usage [[https://polymode.github.io/usage/][link]]
+
+Some useful commands for evaluating chunks
+
+`M-n v v`: eval region or chunk
+
+`M-n v b`: eval all chunks in a buffer
+
+`M-n v u`: eval all chunks from beginning of buffer till point
+
+`M-n v d`: eval all chunks from point till end of buffer
