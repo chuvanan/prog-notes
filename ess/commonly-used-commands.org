@@ -1,5 +1,4 @@
 
-
 * Commonly Used ESS commands
 
 
@@ -61,3 +60,7 @@
 - /C-c C-d v/: ess-display-vignettes <show vignette>
 
 - /C-c C-d a/: ess-display-help-apropos <run apropos>
+
+- /C-c C-up/: ess-eval-buffer-from-beg-to-here
+
+- In inferiror process, hit `,` to bring up a menu of handy command
