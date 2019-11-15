@@ -11,3 +11,11 @@ NumericVector create_vector() {
 
     return(v1 + v2 + v3);
 }
+
+// [[Rcpp::export]]
+NumericVector rcpp_lambda(NumericVector v) {
+    /* NumericVector v = {1, 2, 3, 4, 5}; */
+    double a = 2.0;
+    NumericVector res = sapply(v, [&](double x){return a * x; });
+    return(res);
+}
