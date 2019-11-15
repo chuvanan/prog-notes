@@ -19,3 +19,8 @@ NumericVector rcpp_lambda(NumericVector v) {
     NumericVector res = sapply(v, [&](double x){return a * x; });
     return(res);
 }
+
+// [[Rcpp::export]]
+void rcpp_rcout(NumericVector x) {
+    Rcout << "The value of x: " << x << "\n";
+}
